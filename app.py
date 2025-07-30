@@ -13,21 +13,21 @@ st.header('Análisis del inventario actual de autos seminuevos a la venta')
 hist_button = st.button('Crea un histograma')
 
 if hist_button:
-    st.write('Creación de un histograma para visualizar los datos de los autos a la venta ')
+    st.write('El gráfico muestra distrubución del kilometraje de los vehículos en stock ')
     fig= px.histogram(car_data, x="odometer")
 
-    st.plotyl_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, use_container_width=True)
 
 #Creamos un checkBox para crear un gráfico de dispersión interactivo
 scatter_box = st.checkbox('Crea un gráfico de dispersión')
 if scatter_box:
-    st.write('Costruir un gráfico para mostrar la relación entre el kolometrage y el precio del vehículo')
+    st.write('El gráfico muestra la relación entre el kilometraje y el precio de los vehículos')
     fig= px.scatter(car_data, x= 'odometer', y='price')
     st.plotly_chart(fig, use_container_width=True)
 
 #Creamos un CheckBox para crear un gráfico de barras interactivo
 bar_box = st.checkbox('Crea un gráfico de barras')
 if bar_box:
-    st.write('Construir un gráfico de barras para analizar los precios por los diferentes tipos de vehículos')
+    st.write('El gráfico muestra la diferencia de precio según el tipo de vehículo')
     fig= px.bar(car_data, x='type', y='price')
-    st.plotyl_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, use_container_width=True)
