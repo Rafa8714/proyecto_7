@@ -13,7 +13,7 @@ st.header('Análisis del inventario actual de autos seminuevos a la venta')
 hist_button = st.button('Crea un histograma')
 
 if hist_button:
-    st.write('El gráfico muestra distrubución del kilometraje de los vehículos en stock ')
+    st.write('El gráfico muestra la distrubución del kilometraje de los vehículos en stock ')
     fig= px.histogram(car_data, x="odometer")
 
     st.plotly_chart(fig, use_container_width=True)
