@@ -4,7 +4,7 @@ import pandas as pd
 import plotly.express as px
 
 #Importamos nuestro set de datos
-car_data = pd.read_csv('C:/Users/ralf_/Documents/Proyectos/proyectos/proyecto_7/proyecto_7/vehicles_us.csv')
+car_data = pd.read_csv('vehicles_us.csv')
 
 #Creamos un encavezado que describa el proyecto
 st.header('Análisis del inventario actual de autos seminuevos a la venta')
