@@ -1,2 +1,2 @@
-# proyecto_7
+# Aplicación Web
 Proyecto 7 Aplicación Web
